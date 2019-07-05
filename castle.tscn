@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0.243137, 0.47451, 1 )
+
+[node name="Castle" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3888, 0, -10.9627 )
+
+[node name="Body" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+width = 5.0
+height = 5.0
+depth = 5.0
+material = SubResource( 1 )
+

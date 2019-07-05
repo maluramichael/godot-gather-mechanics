@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "Building",
+"language": "GDScript",
+"path": "res://building.gd"
+}, {
+"base": "KinematicBody",
+"class": "Worker",
+"language": "GDScript",
+"path": "res://worker.gd"
+} ]
+_global_script_class_icons={
+"Building": "",
+"Worker": ""
+}
+
+[application]
+
+config/name="Worker_test"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
+
+[rendering]
+
+quality/filters/use_nearest_mipmap_filter=true
+quality/filters/msaa=2
+environment/default_environment="res://default_env.tres"
